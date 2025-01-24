@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>Recipe App</h1>
+    </center>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <label for="recipeId">Enter Recipe Id</label>
+            </td>
+            <td>
+                <input type="number" id="recipeId" placeholder="Enter Recipe Id">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="recipeName">Enter Recipe Name</label>
+            </td>
+            <td>
+                <input type="text" id="recipeName" placeholder="Enter Recipe Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="recipeType">Select Recipe Type</label>
+            </td>
+            <td>
+                <select id="recipeType">
+                    <option value="Veg">Veg</option>
+                    <option value="Non-Veg">Non-Veg</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="description">Select Recipe Category</label>
+            </td>
+            <td>
+                <input type="text" id="description" placeholder="Enter Recipe Description"><br>
+            </td>
+        </tr>
+    </table>
+    <input type="button" value="Add Recipe" id="add" onclick="Add()">
+    <hr>
+    <table border=2>
+        <thead>
+            <tr>
+                <th>recipe Id</th>
+                <th>recipe Name</th>
+                <th>recipe Type</th>
+                <th>recipe Description</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody id="recipeTable">
+
+        </tbody>
+    </table>
+
+</body>
+<script src="Recipe.js"></script>
+
+</html>
